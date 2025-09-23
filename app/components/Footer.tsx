@@ -8,7 +8,7 @@ export default function Footer() {
           <img src="Images/logo/linkedin.png" alt="LinkedIn link" className="w-8 h-8 mr-10" />
         </a>
         <a href="https://github.com/DervauxJulien" target="_blank" rel="noopener noreferrer">
-          <img src="Images/logo/github.png" alt="Github link" className="w-8 h-8" />
+          <img src="Images/logo/Github.png" alt="Github link" className="w-8 h-8" />
         </a>
     </footer>
   );
