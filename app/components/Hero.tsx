@@ -1,18 +1,20 @@
+// components/Hero.tsx
 "use client";
+
 import { Badge } from "@/app/components/ui/badge";
+import Image from "next/image";
 
 export default function Hero() {
   return (
     <section className="min-h-screen flex flex-col justify-center items-center text-center relative">
 
-
-
-
       {/* Portrait */}
-      <img
-        src="../../Images/julien_pp_3d.png"
+      <Image
+        src="/Images/julien_pp_3d.png"
         alt="Portrait"
-        className="w-60 md:w-80 rounded-full mb-5"
+        width={320}
+        height={320}
+        className="rounded-full mb-5"
       />
 
       {/* Titres */}
@@ -20,17 +22,17 @@ export default function Hero() {
         Dervaux Julien
       </h1>
       <h2 className="text-xl md:text-3xl text-gray-600 dark:text-gray-300">
-        Concepteur Développer d'Applications
+        Concepteur Développeur d&apos;Applications
       </h2>
 
-      {/* Link */}
+      {/* Liens */}
       <div className="flex items-center justify-center mt-5 gap-3">
-        <Badge className="px-4 py-2 text-lg">En recherche d'alternance</Badge>
+        <Badge className="px-4 py-2 text-lg">En recherche d&apos;alternance</Badge>
         <a href="https://www.linkedin.com/in/julien-dervaux-378b7b1b8/" target="_blank" rel="noopener noreferrer">
-          <img src="Images/logo/linkedin.png" alt="LinkedIn link" className="w-8 h-8" />
+          <Image src="/Images/logo/linkedin.png" alt="LinkedIn link" width={32} height={32} />
         </a>
         <a href="https://github.com/DervauxJulien" target="_blank" rel="noopener noreferrer">
-          <img src="Images/logo/github.png" alt="Github link" className="w-8 h-8" />
+          <Image src="/Images/logo/github.png" alt="Github link" width={32} height={32} />
         </a>
       </div>
     </section>

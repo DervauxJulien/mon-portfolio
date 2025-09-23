@@ -1,18 +1,18 @@
 // components/About.tsx
-
 "use client";
 
 import { Badge } from "@/app/components/ui/badge";
+import Image from "next/image";
 
 export default function About() {
   return (
     <section id="about" className="py-20 px-5 md:px-20 text-center">
       <div className="flex flex-wrap justify-center gap-3 mb-10">
-      <img  src="/Images/logo/aboutme.png" alt="" />
+        <Image src="/Images/logo/aboutme.png" alt="About me" width={200} height={200} />
       </div>
       <p className="mb-10 max-w-3xl mx-auto text-lg md:text-xl">
         Développeur en formation CDA depuis le 22 septembre 2025, je me spécialise dans le développement back-end avec Java et Spring Boot,
-        ainsi que front-end avec React et TypeScript. Je suis à la recherche d'une alternance pour mettre en pratique mes compétences et débuter ma carrière.
+        ainsi que front-end avec React et TypeScript. Je suis à la recherche d&apos;une alternance pour mettre en pratique mes compétences et débuter ma carrière.
       </p>
       <div className="flex flex-wrap justify-center gap-3">
         <Badge variant="outline">Java</Badge>
