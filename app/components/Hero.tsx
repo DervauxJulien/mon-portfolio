@@ -35,7 +35,7 @@ export default function Hero() {
           width={32} 
           height={32} />
         </a>
-        <a href="https://github.com/username" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/DervauxJulien" target="_blank" rel="noopener noreferrer">
           <Image
             src="/Images/logo/github.png"
             alt="Github link"
