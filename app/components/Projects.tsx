@@ -8,7 +8,7 @@ import { Badge } from "@/app/components/ui/badge";
 
 const projects = [
   { title: "Priorito", year: "2025", img: "/Images/project/priorito.png", badge: "Springboot / React / Ts", link: "https://priorito.vercel.app/" },
-  { title: "Portfolio", year: "2025", img: "/Images/project/portfolio_2025.png", badge: "Next.js", link: "https://cleanthis.000webhostapp.com/" },
+  { title: "Portfolio", year: "2025", img: "/Images/project/portfolio_2025.png", badge: "Next.js", link: "https://mon-portfolio-sigma-khaki.vercel.app/" },
   { title: "Eternall Stories", year: "2024", badge: "Flutterflow / Flutter", img: "/Images/project/ETERNALLSTORIES/EternallStorie.jpeg", link: '' },
   { title: "Empire Movie", year: "2023", badge: "React / js", img: "/Images/project/TMDB/portfolio.png", link: "https://projet-tmdb-react-js.vercel.app/" },
 
