@@ -29,10 +29,19 @@ export default function Hero() {
       <div className="flex items-center justify-center mt-5 gap-3">
         <Badge className="px-4 py-2 text-lg">En recherche d&apos;alternance</Badge>
         <a href="https://www.linkedin.com/in/julien-dervaux-378b7b1b8/" target="_blank" rel="noopener noreferrer">
-          <Image src="/Images/logo/linkedin.png" alt="LinkedIn link" width={32} height={32} />
+          <Image 
+          src="/Images/logo/linkedin.png" 
+          alt="LinkedIn link" 
+          width={32} 
+          height={32} />
         </a>
-        <a href="https://github.com/DervauxJulien" target="_blank" rel="noopener noreferrer">
-          <Image src="/Images/logo/github.png" alt="Github link" width={32} height={32} />
+        <a href="https://github.com/username" target="_blank" rel="noopener noreferrer">
+          <Image
+            src="/Images/logo/github.png"
+            alt="Github link"
+            width={32}
+            height={32}
+          />
         </a>
       </div>
     </section>
