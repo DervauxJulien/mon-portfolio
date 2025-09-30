@@ -4,6 +4,7 @@
 import { Card, CardHeader, CardTitle, CardContent } from "@/app/components/ui/card";
 import { Button } from "@/app/components/ui/button";
 import { Badge } from "@/app/components/ui/badge";
+import Image from "next/image";
 
 
 const projects = [
@@ -18,7 +19,7 @@ export default function Projects() {
   return (
     <section id="project" className="py-20 px-5 md:px-20 text-center">
       <div className="flex flex-wrap justify-center gap-3 mb-10">
-        <img src="/Images/logo/projet.png" alt="" />
+        <Image src="/Images/logo/projet.png" alt="Projets" width={200} height={200} />
       </div>
       <div className="flex flex-wrap justify-center gap-5">
         {projects.map((proj) => (

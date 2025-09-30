@@ -2,7 +2,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Menu, Sun, Moon } from "lucide-react";
+import { Menu, Sun, Moon, Home } from "lucide-react";
 import { Button } from "@/app/components/ui/button";
 
 export default function Navbar() {
@@ -20,15 +20,18 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 w-full z-50 p-5 flex justify-between items-center bg-white/70 dark:bg-black/70 backdrop-blur-md">
-      <a href="#">
-        <img src="/Images/logo/home.svg" alt="Logo home" className="w-6 h-6"/>
+      <a className="p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+        href={""}
+      >
+        <Home className="" />
       </a>
 
       <ul
-        className={`md:flex md:gap-6 md:items-center md:static absolute left-0 w-full md:w-auto transition-all duration-300 ${
-          open ? "top-16" : "-top-96"
-        } flex flex-col md:flex-row text-black dark:text-white`}
+        className={`md:flex md:gap-6 md:items-center md:static absolute left-0 w-full md:w-auto transition-all duration-300 flex flex-col md:flex-row text-black dark:text-white
+    ${open ? "top-16 bg-white dark:bg-black p-4 rounded-b-md shadow-md" : "-top-96"}
+  `}
       >
+
         {["about", "exp", "project"].map((id) => (
           <li key={id}>
             <a
@@ -39,7 +42,7 @@ export default function Navbar() {
             </a>
           </li>
         ))}
-        <li className="px-4 py-2">
+        <li className="px-4 py-2 flex justify-center">
           <Button variant="outline" asChild>
             <a href="/DERVAUX_JULIEN_CVALTERNANCE.pdf" download>
               Télécharger mon CV
